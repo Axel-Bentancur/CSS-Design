@@ -4,7 +4,7 @@ import "./NeoMediaicons.css";
 export default class NeoMediaicons extends Component {
   render() {
     return (
-      <div className="box">
+      <div className="social-box">
         <div className="container">
           <h1>NEOMORPHISM SOCIAL MEDIA ICONS</h1>
           <div className="social-media">

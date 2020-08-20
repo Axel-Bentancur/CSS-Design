@@ -1,24 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #e3edf7;
-}
-
-h1 {
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 25px;
-  letter-spacing: 4px;
-  padding-bottom: 30px;
-  color: #555;
-  text-align: center;
-  justify-content: center;
-}
-
-.box {
+.social-box {
   display: flex;
   height: 300px;
   width: 100%;
@@ -31,7 +11,7 @@ h1 {
   justify-content: center;
 }
 
-a {
+.social-media a {
   display: flex;
   background: #e3edf7;
   height: 75px;
@@ -47,13 +27,13 @@ a {
   transition: transform 0.5s;
 }
 
-a i {
+.social-media a i {
   color: #777;
   font-size: 35px;
   transition: transform 0.5s;
 }
 
-a:hover {
+.social-media a:hover {
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.15),
     inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
     -0.5px -0.5px 0px rgba(255, 255, 255, 1),
@@ -62,28 +42,28 @@ a:hover {
   transform: translateY(2px);
 }
 
-a:hover i {
+.social-media a:hover i {
   transform: scale(0.9);
 }
 
-a:hover .fa-facebook {
+.social-media a:hover .fa-facebook {
   color: #3b5998;
 }
-a:hover .fa-twitter {
+.social-media a:hover .fa-twitter {
   color: #00acee;
 }
-a:hover .fa-instagram {
+.social-media a:hover .fa-instagram {
   color: #f14843;
 }
-a:hover .fa-whatsapp {
+.social-media a:hover .fa-whatsapp {
   color: #4fce5d;
 }
-a:hover .fa-youtube {
+.social-media a:hover .fa-youtube {
   color: #f00;
 }
-a:hover .fa-linkedin {
+.social-media a:hover .fa-linkedin {
   color: #0e76a8;
 }
-a:hover .fa-github {
+.social-media a:hover .fa-github {
   color: #171515;
 }
