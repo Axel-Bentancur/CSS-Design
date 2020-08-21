@@ -1,0 +1,71 @@
+:root {
+  --b-shadow: -6px -6px 10px rgba(255, 255, 255, 0.7),
+    6px 6px 10px rgba(0, 0, 0, 0.15);
+  --b-shadow-in: inset 6px 6px 10px rgba(0, 0, 0, 0.15),
+    inset -6px -6px 10px rgba(255, 255, 255, 0.7);
+}
+
+.button-box {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-box {
+  height: 120px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--b-shadow);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.check {
+  position: relative;
+  height: 80px;
+  width: 160px;
+  -webkit-appearance: none;
+  box-shadow: var(--b-shadow), var(--b-shadow-in);
+  border-radius: 40px;
+  border: 5px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.check:before,
+.check:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.check:before {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: var(--b-shadow);
+  border-radius: 50%;
+  left: 10px;
+}
+
+.check:after {
+  height: 15px;
+  width: 15px;
+  background-color: #7a7a7a;
+  box-shadow: var(--b-shadow);
+  border-radius: 50%;
+  right: -30px;
+}
+
+.check:checked:before {
+  left: 86px;
+}
+
+.check:checked:after {
+  background-color: #55f696;
+}
